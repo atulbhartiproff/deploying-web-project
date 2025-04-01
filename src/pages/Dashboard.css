@@ -1,0 +1,56 @@
+
+.dashboard {
+  padding: 1rem;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-actions {
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.balance-section {
+  grid-area: balance;
+}
+
+.chart-section {
+  grid-area: chart;
+}
+
+.transactions-section {
+  grid-area: transactions;
+}
+
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "balance balance"
+      "chart transactions";
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard {
+    padding: 1.5rem;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "balance chart"
+      "transactions transactions";
+    min-height: calc(100vh - 12rem);
+  }
+}

@@ -1,0 +1,86 @@
+
+.analytics-page {
+  padding: 1rem;
+}
+
+.analytics-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.analytics-card {
+  background-color: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.summary-stat {
+  padding: 1rem;
+  background-color: hsl(var(--secondary));
+  border-radius: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.stat-value.income {
+  color: #4ade80;
+}
+
+.stat-value.expense {
+  color: #f87171;
+}
+
+.stat-value.savings {
+  color: #60a5fa;
+}
+
+/* Override recharts legend text color */
+.recharts-legend-item-text {
+  color: hsl(var(--foreground)) !important;
+}
+
+@media (min-width: 768px) {
+  .analytics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .summary-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .income-expenses-card,
+  .summary-card {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .analytics-page {
+    padding: 1.5rem;
+  }
+  
+  .summary-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

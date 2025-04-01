@@ -1,0 +1,36 @@
+
+.expense-chart {
+  height: 100%;
+  background-color: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+}
+
+.chart-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.custom-tooltip {
+  background-color: hsl(var(--popover));
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.tooltip-label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.tooltip-value {
+  font-weight: 600;
+  color: hsl(var(--primary));
+}
+
+/* Override recharts legend text color */
+.recharts-legend-item-text {
+  color: hsl(var(--foreground)) !important;
+}

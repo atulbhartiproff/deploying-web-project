@@ -1,0 +1,95 @@
+
+.balance-card {
+  background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--secondary)) 100%);
+  border: 1px solid hsl(var(--border));
+}
+
+.balance-card-header {
+  padding-bottom: 0.5rem;
+}
+
+.balance-card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(var(--card-foreground));
+  opacity: 0.8;
+}
+
+.balance-card-content {
+  padding-top: 0.5rem;
+}
+
+.balance-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #4ade80, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.balance-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  flex: 1;
+}
+
+.stat.income {
+  background-color: rgba(74, 222, 128, 0.1);
+}
+
+.stat.expenses {
+  background-color: rgba(248, 113, 113, 0.1);
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.income .stat-icon {
+  background-color: rgba(74, 222, 128, 0.2);
+  color: #4ade80;
+}
+
+.expenses .stat-icon {
+  background-color: rgba(248, 113, 113, 0.2);
+  color: #f87171;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.stat-value {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.income .stat-value {
+  color: #4ade80;
+}
+
+.expenses .stat-value {
+  color: #f87171;
+}
