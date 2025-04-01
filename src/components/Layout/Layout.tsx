@@ -42,7 +42,7 @@ const Sidebar: React.FC = () => {
         </ul>
       </nav>
       <div className="sidebar-footer">
-        <p><strong>Web Programming Project</strong><br></br>Atul Bharti:23BCE1536<br></br>Rishabh Vineet:23BAI1560<br></br>Sanjay Prakash</p>
+        <p><strong>Web Programming Project</strong><br></br>Atul Bharti:23BCE1536<br></br>Rishabh Vineet:23BAI1560<br></br>Sanjay Prakash:23BDS1103</p>
       </div>
     </aside>
   );
