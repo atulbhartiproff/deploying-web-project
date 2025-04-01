@@ -12,8 +12,8 @@ import { toast } from 'sonner';
 import './Settings.css';
 
 const Settings: React.FC = () => {
-  const [name, setName] = useState('John Doe');
-  const [email, setEmail] = useState('john.doe@example.com');
+  const [name, setName] = useState('Atul Bharti');
+  const [email, setEmail] = useState('whatsyourname@gmail.com');
   const [currency, setCurrency] = useState('INR');
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [weeklyReportEnabled, setWeeklyReportEnabled] = useState(true);
